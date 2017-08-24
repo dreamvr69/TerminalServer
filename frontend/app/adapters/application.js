@@ -5,7 +5,7 @@ import config from '../config/environment';
 import Ember from 'ember';
 
 
-export default ActiveModelAdapter.extend(DataAdapterMixin, FormDataAdapterMixin, {
+export default DS.RESTAdapter.extend(DataAdapterMixin, FormDataAdapterMixin, {
   authorizer: 'authorizer:devise',
   host: config.protocol+'://'+'localhost:3000',
   namespace: 'ember',
