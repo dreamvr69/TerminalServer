@@ -43,7 +43,8 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.protocol = 'http';
-    ENV.host = 'api.fitclubs.nsuask.ru';
+    ENV.host = '149.154.69.99';
+    ENV.baseURL = '/dist';
   }
 
   return ENV;
